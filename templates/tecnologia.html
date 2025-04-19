@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ tecnologia.titulo }}</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <h1>{{ tecnologia.titulo }}</h1>
+    <img src="../imagens/{{ tecnologia.slug }}.jpg" class="img-fluid mb-4" alt="{{ tecnologia.titulo }}">
+
+    <ul class="list-group mb-4">
+      <li class="list-group-item"><strong>Descrição:</strong> {{ tecnologia.descricao }}</li>
+      <li class="list-group-item"><strong>Apresentação:</strong> {{ tecnologia.apresentacao }}</li>
+      <li class="list-group-item"><strong>Orientação:</strong> {{ tecnologia.orientacao }}</li>
+      <li class="list-group-item"><strong>Dicas:</strong> {{ tecnologia.dicas }}</li>
+      <li class="list-group-item"><strong>Etapas justificativa:</strong> {{ tecnologia.etapas_justificativa }}</li>
+      <li class="list-group-item"><strong>Etapas:</strong> {{ tecnologia.etapas }}</li>
+      <li class="list-group-item"><strong>Categoria:</strong> {{ tecnologia.categoria }}</li>
+      <li class="list-group-item"><strong>Descrição da categoria:</strong> {{ tecnologia.categoria_descricao }}</li>
+      <li class="list-group-item"><strong>Custo:</strong> {{ tecnologia.custo }}</li>
+      <li class="list-group-item"><strong>Requer Internet:</strong> {{ tecnologia.requer_internet }}</li>
+      <li class="list-group-item"><strong>Plataformas:</strong> {{ tecnologia.plataformas }}</li>
+      <li class="list-group-item"><strong>Origem:</strong> {{ tecnologia.origem }}</li>
+      <li class="list-group-item"><strong>Autor:</strong> {{ tecnologia.autor }}</li>
+      <li class="list-group-item"><strong>Autor contato:</strong> {{ tecnologia.autor_contato }}</li>
+      <li class="list-group-item"><strong>Data cadastro:</strong> {{ tecnologia.data_cadastro }}</li>
+      <li class="list-group-item"><strong>Link:</strong>
+        <ul class="list-group mb-4">
+      <!-- ... outros campos ... -->
+      <li class="list-group-item"><strong>Link:</strong>
+        <ul>
+          {%- for item in tecnologia.link.split(';') if item.strip() -%}
+            {%- set parts = item.split(',', 1) -%}
+            <li>
+              {{ parts[0] }}:
+              <a href="{{ parts[1] }}" target="_blank">{{ parts[1] }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </li>
+      <!-- ... slug etc. ... -->
+    </ul>
+      </li>
+      <li class="list-group-item"><strong>Slug:</strong> {{ tecnologia.slug }}</li>
+    </ul>
+
+    <h3 class="mt-5">Tecnologias Relacionadas</h3>
+    <div class="row g-3">
+      {% for rel in relacionados %}
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../imagens/{{ rel.slug }}-icon.jpg" class="card-img-top" alt="{{ rel.titulo }}">
+          <div class="card-body">
+            <h5>{{ rel.titulo }}</h5>
+            <a href="{{ rel.slug }}.html" class="btn btn-sm btn-primary">Ver detalhes</a><br>
+            <small>
+              Categoria:
+              <a href="../categoria_{{ rel.categoria.replace(' ', '_') }}.html">
+                {{ rel.categoria }}
+              </a>
+            </small>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

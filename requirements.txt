@@ -1,0 +1,6 @@
+pandas
+jinja2
+
+
+# instalar com
+# pip install -r requirements.txt
