@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boas Vindas! - Catálogo de Tecnologias Assistivas para Surdos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --default: #00bcf2;
+      --default-dark: #016b88;
+      --border-color: #E7EAF0;
+    }
+
+    body {
+      font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+    }
+
+    .featured-font {
+      font-family: "Parkinsans", sans-serif;
+    }
+
+    body * {
+      border-color: var(--border-color);
+    }
+
+    a {
+      color: var(--default);
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: var(--default-dark);
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #00bcf2, #00b294);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    .has-search .form-control {
+      padding-left: 2.375rem;
+      box-shadow: 0px 1px 2px rgba(50, 50, 71, .08);
+      color: rgba(33, 37, 41, 0.75);
+    }
+
+    .has-search .form-control-icon {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 3.2rem;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+    }
+
+    .has-search input:focus {
+      border-color: var(--default);
+    }
+
+    .has-search .form-control::placeholder {
+      color: #aaa;
+    }
+
+
+
+    .card-hover:hover,
+    .card-hover:focus,
+    .card-hover:active {
+      border-color: rgba(0, 190, 242, 0.5);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .container-md {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mb-5" id="topo">
+      <div class="container">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/imagens/logo.png" alt="Tecnologias Assistivas para Surdos">
+        </a>
+        <!-- Toggler/collapsible button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Navigation links -->
+            <li class="nav-item">
+              <a class="nav-link me-3" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 mb-2" href="recursos.html">Recursos Pedagógicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary" href="contato.html">Indique uma Tecnologia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <!-- DESTAQUE -->
+    <section class="mb-3">
+      <div class="container">
+        <div class="row flex align-items-center g-5 pb-5">
+          <div class="offset-d-1 col-md-6 order-2">
+            <img src="assets/imagens/featured-home-4.png" class="d-block mx-lg-auto img-fluid rounded"
+              alt="Tecnologias Assistivas para Surdos em Sala de Aula" loading="lazy">
+          </div>
+          <div class="col-md-6 order-1">
+            <h1 class="featured-font display-3 fw-bold text-body-emphasis lh-1 mb-3">Descubra Tecnologias para um <span
+                class="text-gradient">Ensino Mais Inclusivo</span> para Surdos</h1>
+            <p class="lead">Encontre tecnologias assistivas que promovem a acessibilidade linguística para estudantes
+              surdos em sala de aula, facilitando a comunicação e o aprendizado. Explore o catálogo, veja recursos
+              pedagógicos e colabore sugerindo novas tecnologias!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="container mb-3">
+
+      <!-- filtros -->
+      <div class="row g-3 mb-3">
+        <div class="col-12">
+          <div class="form-group has-search">
+            <span class="bi bi-search form-control-icon"></span>
+            <input id="filtro-tecnologias" type="search" class="form-control form-control-lg"
+              placeholder="digite uma palavra chave">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="d-flex flex-wrap justify-content-center">
+            
+            <div class="dropdown">
+              <button id="categoria-filter" class="btn btn-sm dropdown-toggle me-2 mb-2 opacity-75 btn-outline-secondary"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false" data-label="Categoria">
+                Categoria</button>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="#" data-value="Comunicação Assistiva">Comunicação Assistiva</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Libras: Aprendizagem">Libras: Aprendizagem</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Libras: Dicionários e Glossários">Libras: Dicionários e Glossários</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Libras: Tradução e Interpretação">Libras: Tradução e Interpretação</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Transcrição de Fala">Transcrição de Fala</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Videoconferência">Videoconferência</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <button id="etapa-filter" class="btn btn-sm dropdown-toggle me-2 mb-2 opacity-75 btn-outline-secondary"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false" data-label="Etapa de Ensino">
+                Etapa de Ensino</button>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="#" data-value="EJA">EJA</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Educação Infantil">Educação Infantil</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Ensino Fundamental - Anos Finais">Ensino Fundamental - Anos Finais</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Ensino Fundamental - Anos Iniciais">Ensino Fundamental - Anos Iniciais</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Ensino Médio">Ensino Médio</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Ensino Superior">Ensino Superior</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <button id="custo-filter" class="btn btn-sm dropdown-toggle me-2 mb-2 opacity-75 btn-outline-secondary"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false" data-label="Custo">
+                Custo</button>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="#" data-value="Freemium">Freemium</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Grátis">Grátis</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Pago">Pago</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <button id="plataforma-filter" class="btn btn-sm dropdown-toggle me-2 mb-2 opacity-75 btn-outline-secondary"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false" data-label="Plataforma">
+                Plataforma</button>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="#" data-value="Android">Android</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Site">Site</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Windows">Windows</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="iOS">iOS</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="dropdown">
+              <button id="requerInternet-filter" class="btn btn-sm dropdown-toggle me-2 mb-2 opacity-75 btn-outline-secondary"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false" data-label="Internet">
+                Internet</button>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="#" data-value="Não">Não</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Parcialmente">Parcialmente</a></li>
+                
+                <li><a class="dropdown-item" href="#" data-value="Sim">Sim</a></li>
+                
+              </ul>
+            </div>
+            
+            <button id="clear-filters" class="btn btn-sm btn-warning h-50" style="display:none;"><i class="bi bi-x"></i>
+              Limpar Filtros</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- lista tecnologias -->
+      <div id="lista-tecnologias" class="row g-4 mb-5">
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Dicionários e Glossários"
+          data-titulo="acessibilidade na câmara: dicionário de libras" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="site com dicionário de termos político-legislativos em libras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/acessibilidade-na-camara-dicionario-de-libras-icon.jpg" alt="ACESSIBILIDADE NA CÂMARA: Dicionário de Libras" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/acessibilidade-na-camara-dicionario-de-libras.html" class="stretched-link text-decoration-none text-dark">
+                      ACESSIBILIDADE NA CÂMARA: Dicionário de Libras
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Dicionários e Glossários</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Site com dicionário de termos político-legislativos em Libras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="ararajuba" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="site com conversor de fala para texto e texto para fala.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/ararajuba-icon.jpg" alt="Ararajuba" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/ararajuba.html" class="stretched-link text-decoration-none text-dark">
+                      Ararajuba
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Site com conversor de fala para texto e texto para fala.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="asterics grid" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="permite a comunicação aumentativa em dispositivos diversos.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/asterics-grid-icon.jpg" alt="AsTeRICS Grid" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/asterics-grid.html" class="stretched-link text-decoration-none text-dark">
+                      AsTeRICS Grid
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Permite a comunicação aumentativa em dispositivos diversos.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="ava: transcriptions & captions" data-requer-internet="Sim"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; ios" data-apresentacao="transcrições de áudio em tempo real com baixa taxa de erros.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/ava-icon.jpg" alt="Ava: Transcriptions & Captions" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/ava.html" class="stretched-link text-decoration-none text-dark">
+                      Ava: Transcriptions & Captions
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Transcrições de áudio em tempo real com baixa taxa de erros.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="captify: legendas ao vivo" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="ios" data-apresentacao="app gratuito para transformar voz em texto que funciona offline.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/captify-icon.jpg" alt="Captify: Legendas ao Vivo" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/captify.html" class="stretched-link text-decoration-none text-dark">
+                      Captify: Legendas ao Vivo
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>App gratuito para transformar voz em texto que funciona offline.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="cboard" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja"
+          data-plataforma="android; ios; site; windows" data-apresentacao="ferramenta que auxilia na comunicação usando símbolos e conversão de texto em fala.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/cboard-icon.jpg" alt="Cboard" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/cboard.html" class="stretched-link text-decoration-none text-dark">
+                      Cboard
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Ferramenta que auxilia na comunicação usando símbolos e conversão de texto em fala.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Dicionários e Glossários"
+          data-titulo="colibras" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="site gratuito para pesquisar palavras e visualizar sinais de libras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/colibras-icon.jpg" alt="Colibras" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/colibras.html" class="stretched-link text-decoration-none text-dark">
+                      Colibras
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Dicionários e Glossários</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Site gratuito para pesquisar palavras e visualizar sinais de Libras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="comunicação para surdos" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio"
+          data-plataforma="ios" data-apresentacao="aplicativo projetado para facilitar a comunicação de pessoas surdas.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/comunicacao-para-surdos-icon.jpg" alt="Comunicação para surdos" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/comunicacao-para-surdos.html" class="stretched-link text-decoration-none text-dark">
+                      Comunicação para surdos
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Aplicativo projetado para facilitar a comunicação de pessoas surdas.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="dicionário da língua brasileira de sinais" data-requer-internet="Parcialmente"
+          data-custo="Pago" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="site com milhares de sinais de libras no formato de vídeo.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/dicionario-da-lingua-brasileira-de-sinais-icon.jpg" alt="Dicionário da Língua Brasileira de Sinais" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/dicionario-da-lingua-brasileira-de-sinais.html" class="stretched-link text-decoration-none text-dark">
+                      Dicionário da Língua Brasileira de Sinais
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Site com milhares de sinais de Libras no formato de vídeo.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Pago</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Dicionários e Glossários"
+          data-titulo="dicionário da língua brasileira de sinais v3 - 2011" data-requer-internet="Parcialmente"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="site com dicionário bilíngue (português x libras e libras x português).">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/dicionario-da-lingua-brasileira-de-sinais-2011-icon.jpg" alt="Dicionário da Língua Brasileira de Sinais V3 - 2011" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/dicionario-da-lingua-brasileira-de-sinais-2011.html" class="stretched-link text-decoration-none text-dark">
+                      Dicionário da Língua Brasileira de Sinais V3 - 2011
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Dicionários e Glossários</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Site com dicionário bilíngue (Português x Libras e Libras x Português).</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Dicionários e Glossários"
+          data-titulo="dicionário de sinais da área de tecnologia" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="site que oferece sinais específicos relacionados à tecnologia e informática em libras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/dicionario-de-sinais-da-area-de-tecnologia-icon.jpg" alt="Dicionário de Sinais da Área de Tecnologia" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/dicionario-de-sinais-da-area-de-tecnologia.html" class="stretched-link text-decoration-none text-dark">
+                      Dicionário de Sinais da Área de Tecnologia
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Dicionários e Glossários</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Site que oferece sinais específicos relacionados à tecnologia e informática em Libras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="dolphin" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio"
+          data-plataforma="site" data-apresentacao="permite converter textos em fala e transcrever fala em texto diretamente no navegador.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/dolphin-icon.jpg" alt="Dolphin" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/dolphin.html" class="stretched-link text-decoration-none text-dark">
+                      Dolphin
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Permite converter textos em fala e transcrever fala em texto diretamente no navegador.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="expressia: falar e aprender" data-requer-internet="Parcialmente"
+          data-custo="Freemium" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; site" data-apresentacao="site para comunicação alternativa que permite a criação de pranchas personalizadas.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/expressia-icon.jpg" alt="Expressia: Falar e Aprender" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/expressia.html" class="stretched-link text-decoration-none text-dark">
+                      Expressia: Falar e Aprender
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Site para comunicação alternativa que permite a criação de pranchas personalizadas.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="fireflies: ai notetaker" data-requer-internet="Sim"
+          data-custo="Pago" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; ios" data-apresentacao="permite gravar e transcrever aulas e reuniões em aplicativos como google meet.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/fireflies-icon.jpg" alt="Fireflies: AI notetaker" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/fireflies.html" class="stretched-link text-decoration-none text-dark">
+                      Fireflies: AI notetaker
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Permite gravar e transcrever aulas e reuniões em aplicativos como Google Meet.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Pago</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="gitalktext" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="transcreve áudio do youtube para texto.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/gitalktext-icon.jpg" alt="GitalkText" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/gitalktext.html" class="stretched-link text-decoration-none text-dark">
+                      GitalkText
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Transcreve áudio do Youtube para texto.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Videoconferência"
+          data-titulo="google meet" data-requer-internet="Sim"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; site" data-apresentacao="plataforma de videoconferência com legendas automáticas em tempo real.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/google-meet-icon.jpg" alt="Google Meet" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/google-meet.html" class="stretched-link text-decoration-none text-dark">
+                      Google Meet
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Videoconferência</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Plataforma de videoconferência com legendas automáticas em tempo real.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Tradução e Interpretação"
+          data-titulo="hand talk tradutor para libras" data-requer-internet="Não"
+          data-custo="Freemium" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja"
+          data-plataforma="android; ios" data-apresentacao="app que utiliza personagens para traduzir texto e voz em libras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/hand-talk-icon.jpg" alt="Hand Talk Tradutor para Libras" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/hand-talk.html" class="stretched-link text-decoration-none text-dark">
+                      Hand Talk Tradutor para Libras
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Tradução e Interpretação</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>App que utiliza personagens para traduzir texto e voz em Libras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="helptalk" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android" data-apresentacao="app para comunicação oral ou escrita, inclusive em situações emergenciais.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/helptalk-icon.jpg" alt="HelpTalk" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/helptalk.html" class="stretched-link text-decoration-none text-dark">
+                      HelpTalk
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>App para comunicação oral ou escrita, inclusive em situações emergenciais.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="letmetalk:aplicação grátis caa" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais"
+          data-plataforma="ios" data-apresentacao="apoia a comunicação de pessoas surdas e funciona offline.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/letmetalk-icon.jpg" alt="LetMeTalk:Aplicação Grátis CAA" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/letmetalk.html" class="stretched-link text-decoration-none text-dark">
+                      LetMeTalk:Aplicação Grátis CAA
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Apoia a comunicação de pessoas surdas e funciona offline.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Aprendizagem"
+          data-titulo="libras para todos" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja"
+          data-plataforma="android" data-apresentacao="oferece milhares de palavras em libras, alfabeto manual e teclado de escrita em libras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/libras-para-todos-icon.jpg" alt="Libras Para Todos" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/libras-para-todos.html" class="stretched-link text-decoration-none text-dark">
+                      Libras Para Todos
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Aprendizagem</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Oferece milhares de palavras em Libras, alfabeto manual e teclado de escrita em Libras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Dicionários e Glossários"
+          data-titulo="librasquim - dicionário de libras para química" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="traz sinais em libras para termos comuns da química.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/librasquim-icon.jpg" alt="LibrasQuim - Dicionário de Libras para Química" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/librasquim.html" class="stretched-link text-decoration-none text-dark">
+                      LibrasQuim - Dicionário de Libras para Química
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Dicionários e Glossários</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Traz sinais em Libras para termos comuns da Química.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Dicionários e Glossários"
+          data-titulo="librasti" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="ensino médio; eja; ensino superior"
+          data-plataforma="android" data-apresentacao="traz um glossário de termos técnicos da área de tecnologia da informação em libras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/librasti-icon.jpg" alt="LibrasTI" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/librasti.html" class="stretched-link text-decoration-none text-dark">
+                      LibrasTI
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Dicionários e Glossários</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Traz um glossário de termos técnicos da área de tecnologia da informação em Libras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="live transcribe" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="ios" data-apresentacao="utilize o smartphone ou tablet para transcrever falas e sons em tempo real. ">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/live-transcribe-icon.jpg" alt="Live Transcribe" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/live-transcribe.html" class="stretched-link text-decoration-none text-dark">
+                      Live Transcribe
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Utilize o smartphone ou tablet para transcrever falas e sons em tempo real. </small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="matraquinha" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio"
+          data-plataforma="android; ios" data-apresentacao="aplicativo de comunicação alternativa que funciona offline.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/matraquinha-icon.jpg" alt="Matraquinha" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/matraquinha.html" class="stretched-link text-decoration-none text-dark">
+                      Matraquinha
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Aplicativo de comunicação alternativa que funciona offline.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Videoconferência"
+          data-titulo="microsoft teams" data-requer-internet="Parcialmente"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; ios; windows" data-apresentacao="plataforma de colaboração com legendas em tempo real e transcrição automática.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/microsoft-teams-icon.jpg" alt="Microsoft Teams" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/microsoft-teams.html" class="stretched-link text-decoration-none text-dark">
+                      Microsoft Teams
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Videoconferência</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Plataforma de colaboração com legendas em tempo real e transcrição automática.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="microsoft translate" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; ios; windows" data-apresentacao="app de tradução que pode ser usado para converter fala em texto ou texto em voz.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/microsoft-translate-icon.jpg" alt="Microsoft Translate" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/microsoft-translate.html" class="stretched-link text-decoration-none text-dark">
+                      Microsoft Translate
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>App de tradução que pode ser usado para converter fala em texto ou texto em voz.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="mudo que fala" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais"
+          data-plataforma="android" data-apresentacao="app que permite a conversão de texto em voz, com possibilidade de adicionar novas palavras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/mudo-que-fala-icon.jpg" alt="Mudo Que Fala" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/mudo-que-fala.html" class="stretched-link text-decoration-none text-dark">
+                      Mudo Que Fala
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>App que permite a conversão de texto em voz, com possibilidade de adicionar novas palavras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="picto4me" data-requer-internet="Parcialmente"
+          data-custo="Freemium" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio"
+          data-plataforma="site" data-apresentacao="permite conversar através de pranchas de comunicação integradas ao google drive.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/picto4me-icon.jpg" alt="Picto4Me" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/picto4me.html" class="stretched-link text-decoration-none text-dark">
+                      Picto4Me
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Permite conversar através de pranchas de comunicação integradas ao Google Drive.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="plaphoons" data-requer-internet="Parcialmente"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio"
+          data-plataforma="android; windows" data-apresentacao="ajuda na comunicação e no aprendizado de leitura e escrita.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/plaphoons-icon.jpg" alt="Plaphoons" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/plaphoons.html" class="stretched-link text-decoration-none text-dark">
+                      Plaphoons
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Ajuda na comunicação e no aprendizado de leitura e escrita.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Aprendizagem"
+          data-titulo="quiz de libras" data-requer-internet="Não"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais"
+          data-plataforma="android" data-apresentacao="quiz com módulo onde são mostrados todos os sinais em libras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/quiz-de-libras-icon.jpg" alt="Quiz de Libras" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/quiz-de-libras.html" class="stretched-link text-decoration-none text-dark">
+                      Quiz de Libras
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Aprendizagem</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Quiz com módulo onde são mostrados todos os sinais em Libras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Tradução e Interpretação"
+          data-titulo="rybená tradutor libras voz" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos iniciais; ensino fundamental - anos finais"
+          data-plataforma="android" data-apresentacao="app que traduz português para libras e ensina a linguagem de sinais.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/rybena-icon.jpg" alt="Rybená Tradutor Libras Voz" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/rybena.html" class="stretched-link text-decoration-none text-dark">
+                      Rybená Tradutor Libras Voz
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Tradução e Interpretação</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>App que traduz português para Libras e ensina a linguagem de sinais.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Dicionários e Glossários"
+          data-titulo="senai libras" data-requer-internet="Parcialmente"
+          data-custo="Grátis" data-etapas="ensino médio; eja; ensino superior; "
+          data-plataforma="android; ios" data-apresentacao="glossário de termos técnicos para cursos de educação profissional.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/senai-libras-icon.jpg" alt="SENAI Libras" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/senai-libras.html" class="stretched-link text-decoration-none text-dark">
+                      SENAI Libras
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Dicionários e Glossários</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Glossário de termos técnicos para cursos de educação profissional.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Aprendizagem"
+          data-titulo="sinalário em libras" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos iniciais; ensino fundamental - anos finais"
+          data-plataforma="android" data-apresentacao="lista palavras em língua portuguesa e mostra o sinal correspondente em vídeo.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/sinalario-em-libras-icon.jpg" alt="Sinalário em Libras" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/sinalario-em-libras.html" class="stretched-link text-decoration-none text-dark">
+                      Sinalário em Libras
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Aprendizagem</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Lista palavras em Língua Portuguesa e mostra o sinal correspondente em vídeo.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Videoconferência"
+          data-titulo="skype" data-requer-internet="Sim"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; ios; site; windows" data-apresentacao="serviço de comunicação com legendas ao vivo e tradução de chamadas.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/skype-icon.jpg" alt="Skype" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/skype.html" class="stretched-link text-decoration-none text-dark">
+                      Skype
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Videoconferência</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Serviço de comunicação com legendas ao vivo e tradução de chamadas.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="speakliz: para pessoas com def" data-requer-internet="Parcialmente"
+          data-custo="Pago" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja"
+          data-plataforma="android; ios" data-apresentacao="app que ua ia para auxiliar na comunicação de pessoas surdas.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/speakliz-icon.jpg" alt="SpeakLiz: para pessoas com def" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/speakliz.html" class="stretched-link text-decoration-none text-dark">
+                      SpeakLiz: para pessoas com def
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>App que ua IA para auxiliar na comunicação de pessoas surdas.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Pago</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="speech to text | voice to text" data-requer-internet="Sim"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android" data-apresentacao="aplicativo que converte fala em texto em tempo real com suporte para mais de 30 idiomas. ">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/speech-to-text-voice-to-text-icon.jpg" alt="Speech To Text | Voice To Text" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/speech-to-text-voice-to-text.html" class="stretched-link text-decoration-none text-dark">
+                      Speech To Text | Voice To Text
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Aplicativo que converte fala em texto em tempo real com suporte para mais de 30 idiomas. </small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="speechnotes" data-requer-internet="Parcialmente"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; site" data-apresentacao="permite que o conteúdo falado seja convertido em texto, com suporte limitado offline.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/speechnotes-icon.jpg" alt="SpeechNotes" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/speechnotes.html" class="stretched-link text-decoration-none text-dark">
+                      SpeechNotes
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Permite que o conteúdo falado seja convertido em texto, com suporte limitado offline.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Dicionários e Glossários"
+          data-titulo="spread the sign" data-requer-internet="Parcialmente"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; site" data-apresentacao="permite traduzir de palavras para diferentes línguas de sinais através de vídeos.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/spread-the-sign-icon.jpg" alt="Spread The Sign" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/spread-the-sign.html" class="stretched-link text-decoration-none text-dark">
+                      Spread The Sign
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Dicionários e Glossários</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Permite traduzir de palavras para diferentes línguas de sinais através de vídeos.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="symbotalk - aac talker" data-requer-internet="Não"
+          data-custo="Freemium" data-etapas="educação infantil; ensino fundamental - anos iniciais"
+          data-plataforma="site" data-apresentacao="usa símbolos para facilitar a comunicação, e pode ser personalizado.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/symbotalk-icon.jpg" alt="SymboTalk - AAC Talker" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/symbotalk.html" class="stretched-link text-decoration-none text-dark">
+                      SymboTalk - AAC Talker
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Usa símbolos para facilitar a comunicação, e pode ser personalizado.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Não
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="tradutor de conversas" data-requer-internet="Sim"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android" data-apresentacao="tradutor com função de transcrição de fala em texto.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/tradutor-de-conversas-icon.jpg" alt="Tradutor de Conversas" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/tradutor-de-conversas.html" class="stretched-link text-decoration-none text-dark">
+                      Tradutor de Conversas
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Tradutor com função de transcrição de fala em texto.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="transcreva ao vivo" data-requer-internet="Parcialmente"
+          data-custo="Pago" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="ios" data-apresentacao="aplicativo para ios que transcreve falas em tempo real e suporte para mais de 60 idiomas.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/transcreva-ao-vivo-icon.jpg" alt="Transcreva ao vivo" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/transcreva-ao-vivo.html" class="stretched-link text-decoration-none text-dark">
+                      Transcreva ao vivo
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Aplicativo para iOS que transcreve falas em tempo real e suporte para mais de 60 idiomas.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Pago</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="transcrição da fala para texto" data-requer-internet="Parcialmente"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio"
+          data-plataforma="ios" data-apresentacao="transcrição de fala em texto com modo offline.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/transcricao-da-fala-para-texto-icon.jpg" alt="Transcrição da fala para texto" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/transcricao-da-fala-para-texto.html" class="stretched-link text-decoration-none text-dark">
+                      Transcrição da fala para texto
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Transcrição de fala em texto com modo offline.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="transcrição instantânea" data-requer-internet="Parcialmente"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android" data-apresentacao="transcrição em tempo real com suporte offline.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/transcricao-instantanea-icon.jpg" alt="Transcrição Instantânea" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/transcricao-instantanea.html" class="stretched-link text-decoration-none text-dark">
+                      Transcrição Instantânea
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Transcrição em tempo real com suporte offline.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="transkriptor" data-requer-internet="Parcialmente"
+          data-custo="Pago" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site; android; ios" data-apresentacao="site e aplicativo para transcrição de áudio em texto, com ferramentas de ia.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/transkriptor-icon.jpg" alt="Transkriptor" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/transkriptor.html" class="stretched-link text-decoration-none text-dark">
+                      Transkriptor
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Site e aplicativo para transcrição de áudio em texto, com ferramentas de IA.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Pago</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Transcrição de Fala"
+          data-titulo="turboscribe" data-requer-internet="Sim"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="site" data-apresentacao="transcrição de arquivos de áudio e vídeo por ia com alta precisão.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/turboscribe-icon.jpg" alt="TurboScribe" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/turboscribe.html" class="stretched-link text-decoration-none text-dark">
+                      TurboScribe
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Transcrição de Fala</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Transcrição de arquivos de áudio e vídeo por IA com alta precisão.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="virginia ajuda deficientes" data-requer-internet="Parcialmente"
+          data-custo="Grátis" data-etapas="educação infantil; ensino fundamental - anos iniciais; ensino fundamental - anos finais; ensino médio; eja"
+          data-plataforma="android" data-apresentacao="permite que as pessoas possam fazer pedidos e comunicar necessidades.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/virginia-icon.jpg" alt="Virginia ajuda deficientes" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/virginia.html" class="stretched-link text-decoration-none text-dark">
+                      Virginia ajuda deficientes
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Permite que as pessoas possam fazer pedidos e comunicar necessidades.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Parcialmente
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Libras: Tradução e Interpretação"
+          data-titulo="vlibras" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos iniciais; ensino fundamental - anos finais"
+          data-plataforma="android; ios" data-apresentacao="traduz automaticamente conteúdos em português para libras.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/vlibras-icon.jpg" alt="VLibras" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/vlibras.html" class="stretched-link text-decoration-none text-dark">
+                      VLibras
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Libras: Tradução e Interpretação</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Traduz automaticamente conteúdos em português para Libras.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Comunicação Assistiva"
+          data-titulo="zapia - assistente pessoal ia" data-requer-internet="Sim"
+          data-custo="Grátis" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="ios; site" data-apresentacao="responde perguntas e transcreve audios grátis pelo whatsapp.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/zapia-icon.jpg" alt="Zapia - Assistente Pessoal IA" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/zapia.html" class="stretched-link text-decoration-none text-dark">
+                      Zapia - Assistente Pessoal IA
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Comunicação Assistiva</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Responde perguntas e transcreve audios grátis pelo WhatsApp.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Grátis</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="col-md-4 item-tecnologia" data-categoria="Videoconferência"
+          data-titulo="zoom" data-requer-internet="Sim"
+          data-custo="Freemium" data-etapas="ensino fundamental - anos finais; ensino médio; eja; ensino superior"
+          data-plataforma="android; ios; site; windows" data-apresentacao="plataforma de videoconferência com legendas automáticas em tempo real.">
+          <div class="card card-hover h-100 position-relative">
+            <div class="card-body d-flex gap-3">
+              <img src="imagens/zoom-icon.jpg" alt="Zoom" width="50" height="50"
+                class="rounded flex-shrink-0">
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h2 class="featured-font h5 mb-0">
+                    <a href="tecnologias/zoom.html" class="stretched-link text-decoration-none text-dark">
+                      Zoom
+                    </a>
+                  </h2>
+                  <span class="text-secondary text-uppercase fw-bold" style="font-size: .7em">Videoconferência</span>
+                  <p class="mt-2 mb-3 text-body-secondary lh-1">
+                    <small>Plataforma de videoconferência com legendas automáticas em tempo real.</small>
+                  </p>
+                  <p class="m-0">
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-currency-dollar"></i>Freemium</span>
+
+                    <span
+                      class="badge opacity-75 bg-white-subtle border border-secondary-subtle text-secondary rounded-pill fw-normal">
+                      <i class="bi bi-wifi"></i>
+                      Sim
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+
+      <div id="no-results" class="alert alert-warning text-center mb-5" style="display:none;">
+        Não há resultados para os filtros selecionados.
+      </div>
+    </section>
+
+    <!-- COLABORE -->
+    <section class="container mb-5 py-5">
+      <div class="row p-4 align-items-center rounded-3 bg-info-subtle">
+        <div class="col-md-3 p-0 overflow-hidden">
+          <img class="img-fluid d-block mx-auto" src="assets/imagens/colaborate.png" alt="Indique uma tecnologia"
+            style="max-height: 200px;" loading="lazy">
+        </div>
+        <div class="col-md-9">
+          <h2 class="featured-font h2 fw-bold lh-1 text-body-emphasis">Indique uma Tecnologia!</h2>
+          <p class="lead">Conhece alguma tecnologia assistiva que promova acessibilidade linguística para surdos que não
+            está listada aqui? Compartilhe conosco e nos ajude a manter este catálogo completo e atualizado!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a role="button" href="contato.html" class="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold">Indique</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section class="container mb-5">
+
+      <h2 class="display-4 fw-bold featured-font m-0">Recursos Pedagógicos</h2>
+      <p class="text-muted lead mb-5">Confira uma seleção de sites, vídeos e aplicativos contendo formação e informação
+        que
+        auxiliam e orientam sobre a educação para surdos.</p>
+      <div class="row g-4 mb-3">
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://edisciplinas.usp.br/course/view.php?id=5603" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Curso de Libras</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Curso de Libras</span>
+              <p class="card-text my-3">Curso online de Libras oferecido pela USP, com conteúdo didático estruturado.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://ead.sesc.digital/cursos/course-v1:sescsaopaulo+c017+2023_libras/sobre" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Curso de Libras</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Curso de Libras</span>
+              <p class="card-text my-3">Curso de Libras oferecido pelo SESC, com recursos didáticos.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://blog.surdoparasurdo.com.br/livros-e-apostilas-gratuitos-em-libras-pdf-496c7f798f03" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Livros e apostilas gratuitos em Libras</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Materiais Pedagógicos</span>
+              <p class="card-text my-3">Repositório de livros e apostilas gratuitas em Libras.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://www.gov.br/mec/pt-br/media/publicacoes/semesp/alunossurdos.pdf/view" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Saberes e práticas da inclusão</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Formação de Professores</span>
+              <p class="card-text my-3">Guia prático para professores sobre inclusão de alunos surdos.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://moodle.ifrs.edu.br/course/index.php?categoryid=81" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Curso de Libras</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Curso de Libras</span>
+              <p class="card-text my-3">Curso de Libras oferecido pelo IFRS, com conteúdo online.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://diversa.org.br/materiais-pedagogicos/" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Diversa</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Materiais Pedagógicos</span>
+              <p class="card-text my-3">Materiais pedagógicos inclusivos para diversos públicos.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://www.youtube.com/channel/UChIqq799NHyK9-JNECUISZg" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Canal Viver de Libras</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Educação em Libras</span>
+              <p class="card-text my-3">Canal no YouTube com conteúdos sobre Libras para o dia a dia.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Youtube
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://apps.apple.com/br/app/alfabeto-libras/id1195602484" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Alfabeto LIBRAS</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Educação em Libras</span>
+              <p class="card-text my-3">App que ensina o alfabeto em Libras de forma interativa.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                iOS
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://www.youtube.com/c/aprendercomlibras" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Canal Aprender com Libras</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Educação em Libras</span>
+              <p class="card-text my-3">Canal no YouTube com aulas e recursos em Libras.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Youtube
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://diversa.org.br/materiais-pedagogicos/" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Materiais Pedagógicos</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Materiais Pedagógicos</span>
+              <p class="card-text my-3">Materiais pedagógicos inclusivos para diversas disciplinas.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="https://cta.ifrs.edu.br/materiais-de-apoio/glossarios-e-materiais-didaticos-em-libras/" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Materiais Didáticos em Libras</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Materiais Pedagógicos</span>
+              <p class="card-text my-3">Materiais didáticos em Libras para apoio ao ensino.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="col-md-3">
+          <article class="card card-hover h-100 position-relative">
+            <div class="card-body bg-body-tertiary">
+              <h2 class="h5 mb-0">
+                <a href="http://repositorio.ines.gov.br/ilustra/" rel="nofollow noopener" class="stretched-link text-decoration-none text-dark"
+                  target="_blank">Repositório Digital Huet</a>
+              </h2>
+              <span class="categoria text-secondary text-uppercase fw-bold" style="font-size: .7em">Materiais Pedagógicos</span>
+              <p class="card-text my-3">Repositório digital com materiais educativos para surdos.</p>
+              <span class="badge bg-white border-0 text-secondary rounded-pill">
+                Site
+              </span>
+            </div>
+          </article>
+        </div>
+        
+      </div>
+
+      <p class="text-center mb-5">
+        <a href="recursos.html" class="btn btn-outline-primary mt-4">Ver Todos <i
+            class="bi bi-arrow-right mx-2"></i></a>
+      </p>
+    </section>
+  </main>
+
+  <!-- TOPO -->
+  <div class="text-center pt-4 my-5">
+    <a href="#topo" class="btn btn-sm btn-link text-start text-decoration-none">
+      <i class="bi bi-arrow-up"></i>
+      voltar ao topo</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <div class="row pt-5 mt-5 border-top">
+      <div class="col-md-5 mb-3">
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0">
+            <img class="img-fluid d-block mx-auto" src="assets/imagens/assinatura.png"
+              alt="Tecnologias Assistivas para Surdos" style="max-height: 120px;" loading="lazy">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <a href="index.html" class="text-decoration-none text-body-tertiary">
+              <img class="img-fluid mb-2" src="assets/imagens/logo.png" alt="Tecnologias Assistivas para Surdos"
+              style="max-height: 200px;" loading="lazy">
+            <p>
+              Descubra tecnologias assistivas para surdos, e promova uma educação mais inclusiva!
+            </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3"></div>
+      <div class="col-md-2 mb-3">
+        <h5>Navegue</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-primary">Início</a></li>
+          <li class="nav-item mb-2"><a href="recursos.html" class="nav-link p-0 text-primary">Recursos</a></li>
+          <li class="nav-item mb-2"><a href="contato.html?tipo=colabore"
+              class="nav-link p-0 text-primary">Colabore</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h5>Sobre</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-primary">Sobre</a></li>
+          <li class="nav-item mb-2"><a href="equipe.html" class="nav-link p-0 text-primary">Equipe</a></li>
+          <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-primary">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-md-8">
+        <p class="text-secondary text-start fst-italic">
+          <small>Este produto educacional (catálogo de tecnologias assistivas) é fruto de pesquisa de Mestrado
+            Profissional em Computação Aplicada.</small>
+        </p>
+      </div>
+      <div class="col-md-4 text-start text-md-end">
+        <p class="text-secondary text-end fst-italic">
+          <small>Brasil, 2025</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
