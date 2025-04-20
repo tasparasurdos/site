@@ -5,71 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contato - Catálogo de Tecnologias Assistivas para Surdos</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap"
-        rel="stylesheet">
-
     <style>
         :root {
-            --default: #00bcf2;
-            --default-dark: #016b88;
-            --border-color: #E7EAF0;
+          --default: #00bcf2;
+          --default-dark: #016b88;
+          --border-color: #E7EAF0;
         }
-
+    
         body {
-            font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+          font-family: "Noto Sans", Helvetica, Arial, sans-serif;
         }
-
-        .featured-font,
-        h1,
-        h2,
-        h3,
-        h4,
-        .h1,
-        .h2,
-        .h3,
-        .h4 {
-            font-family: "Parkinsans", sans-serif;
+    
+        .featured-font {
+          font-family: "Parkinsans", sans-serif;
         }
-
+    
         body * {
-            border-color: var(--border-color);
+          border-color: var(--border-color);
         }
-
+    
         a {
-            color: var(--default);
+          color: var(--default);
         }
-
+    
         a:hover,
         a:focus,
         a:active {
-            color: var(--default-dark);
+          color: var(--default-dark);
         }
-
+    
         .text-gradient {
-            background: linear-gradient(to right, #00bcf2, #00b294);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+          background: linear-gradient(to right, #00bcf2, #00b294);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
         }
-
+    
+        .has-search .form-control {
+          padding-left: 2.375rem;
+          box-shadow: 0px 1px 2px rgba(50, 50, 71, .08);
+          color: rgba(33, 37, 41, 0.75);
+        }
+    
+        .has-search .form-control-icon {
+          position: absolute;
+          z-index: 2;
+          display: block;
+          width: 2.5rem;
+          height: 2.5rem;
+          line-height: 3.2rem;
+          text-align: center;
+          pointer-events: none;
+          color: #aaa;
+        }
+    
+        .has-search input:focus {
+          border-color: var(--default);
+        }
+    
+        .has-search .form-control::placeholder {
+          color: #aaa;
+        }
+    
+    
+    
         .card-hover:hover,
         .card-hover:focus,
         .card-hover:active {
-            border-color: rgba(0, 190, 242, 0.5);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          border-color: rgba(0, 190, 242, 0.5);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
-
+    
         .container-md {
-            max-width: 860px;
-            margin: 0 auto;
+          max-width: 860px;
+          margin: 0 auto;
+        }
+        .spinner-section,
+        .response-section {
+            display: none;
         }
     </style>
 </head>
@@ -79,51 +94,42 @@
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white mb-5" id="topo">
             <div class="container">
-                <!-- Brand/logo -->
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/imagens/logo.png" alt="Tecnologias Assistivas para Surdos">
                 </a>
-                <!-- Toggler/collapsible button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <!-- Navigation links -->
-                        <li class="nav-item">
-                            <a class="nav-link me-3" href="index.html">Tecnologias</a>
+                        <li class="nav-item"><a class="nav-link me-3" href="index.html">Tecnologias</a></li>
+                        <li class="nav-item"><a class="nav-link me-3 mb-2" href="recursos.html">Recursos Pedagógicos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link me-3 mb-2" href="recursos.html">Recursos Pedagógicos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-primary" href="contato.html">Indique uma Tecnologia</a>
+                        <li class="nav-item"><a class="btn btn-primary" href="contato.html">Indique uma Tecnologia</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
-
         <article class="container container-md mb-5">
-
             <div class="row g-4">
-
-                <a href="index.html" class="btn btn-sm btn-link text-start text-decoration-none"><i
-                        class="bi bi-arrow-left"></i> voltar
-                    ao início</a>
+                <a href="index.html" class="btn btn-sm btn-link text-start text-decoration-none">
+                    <i class="bi bi-arrow-left"></i> voltar ao início
+                </a>
                 <div class="col-12">
-                    <!-- header -->
                     <h1 class="featured-font display-3 fw-bold text-body-emphasis lh-1 m-0">Contato</h1>
                 </div>
                 <div class="col-12">
-                    <p>Sua opinião é importante para nos ajudar a melhorar ainda mais este site. Compartilhe conosco suas sugestões, críticas ou elogios. Ficaremos muito felizes em receber o seu contato, e prometemos responder em breve!</p>
+                    <p>Sua opinião é importante para nos ajudar a melhorar ainda mais este site. Compartilhe conosco
+                        suas sugestões, críticas ou elogios. Ficaremos muito felizes em receber o seu contato, e
+                        prometemos responder em breve!</p>
                 </div>
                 <div class="col-12">
-                    <form id="contact-form" action="https://formspree.io/f/mldjqylr" method="POST">
+                    <form id="contact-form" action="https://formspree.io/f/mldjqylr" method="POST" novalidate>
                         <div class="mb-3">
                             <label for="nome" class="form-label">Seu Nome:</label>
                             <input type="text" id="nome" name="nome" class="form-control" required>
@@ -145,62 +151,40 @@
                             <button type="reset" class="btn btn-secondary">Limpar</button>
                         </div>
                     </form>
-                </div>
-            </div>
 
-        </article>
-
-        <!-- Modal -->
-        <div class="modal fade" id="status-modal" tabindex="-1" aria-labelledby="status-modal-label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="status-modal-label">Status</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="modal-spinner" class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Enviando mensagem...</span>
+                    <!-- Div de envio -->
+                    <div class="spinner-section text-center my-5">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Carregando...</span>
                         </div>
-                        <p id="modal-message" class="mt-3"></p>
+                        <p>Enviando seu formulário...</p>
                     </div>
-                    <div class="modal-footer">
-                        <button id="modal-cancel-button" class="btn btn-danger"
-                            data-bs-dismiss="modal">Cancelar</button>
-                        <button id="modal-back-button" class="btn btn-secondary d-none">Voltar para página
-                            inicial</button>
+
+                    <!-- Div de resposta -->
+                    <div class="response-section text-center my-5">
+                        <p id="response-message"></p>
+                        <button id="response-button" class="btn btn-primary"></button>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </article>
     </main>
 
     <!-- TOPO -->
-    <div class="text-center pt-4 my-5">
-        <a href="#topo" class="btn btn-sm btn-link text-start text-decoration-none">
-            <i class="bi bi-arrow-up"></i>
-            voltar ao topo</a>
-    </div>
-
-    <!-- FOOTER -->
+    <div class="text-center pt-4 my-5"> <a href="#topo" class="btn btn-sm btn-link text-start text-decoration-none"> <i
+                class="bi bi-arrow-up"></i> voltar ao topo</a> </div> <!-- FOOTER -->
     <footer class="container">
         <div class="row pt-5 mt-5 border-top">
             <div class="col-md-5 mb-3">
                 <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0">
-                        <img class="img-fluid d-block mx-auto" src="assets/imagens/assinatura.png"
-                            alt="Tecnologias Assistivas para Surdos" style="max-height: 120px;" loading="lazy">
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                        <a href="index.html" class="text-decoration-none text-body-tertiary">
+                    <div class="flex-shrink-0"> <img class="img-fluid d-block mx-auto"
+                            src="assets/imagens/assinatura.png" alt="Tecnologias Assistivas para Surdos"
+                            style="max-height: 120px;" loading="lazy"> </div>
+                    <div class="flex-grow-1 ms-3"> <a href="index.html" class="text-decoration-none text-body-tertiary">
                             <img class="img-fluid mb-2" src="assets/imagens/logo.png"
                                 alt="Tecnologias Assistivas para Surdos" style="max-height: 200px;" loading="lazy">
-                            <p>
-                                Descubra tecnologias assistivas para surdos, e promova uma educação mais inclusiva!
-                            </p>
-                        </a>
-                    </div>
+                            <p> Descubra tecnologias assistivas para surdos, e promova uma educação mais inclusiva! </p>
+                        </a> </div>
                 </div>
             </div>
             <div class="col-md-3 mb-3"></div>
@@ -214,82 +198,83 @@
                             class="nav-link p-0 text-primary">Colabore</a></li>
                 </ul>
             </div>
-
             <div class="col-md-2 mb-3">
                 <h5>Sobre</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-primary">Sobre</a></li>
                     <li class="nav-item mb-2"><a href="equipe.html" class="nav-link p-0 text-primary">Equipe</a></li>
-                    <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-primary">Contato</a>
-                    </li>
+                    <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-primary">Contato</a> </li>
                 </ul>
             </div>
         </div>
-
         <hr>
         <div class="row">
             <div class="col-md-8">
-                <p class="text-secondary text-start fst-italic">
-                    <small>Este produto educacional (catálogo de tecnologias assistivas) é fruto de pesquisa de Mestrado
-                        Profissional em Computação Aplicada.</small>
-                </p>
+                <p class="text-secondary text-start fst-italic"> <small>Este produto educacional (catálogo de
+                        tecnologias assistivas) é fruto de pesquisa de Mestrado Profissional em Computação
+                        Aplicada.</small> </p>
             </div>
             <div class="col-md-4 text-start text-md-end">
-                <p class="text-secondary text-end fst-italic">
-                    <small>Brasil, 2025</small>
-                </p>
+                <p class="text-secondary text-end fst-italic"> <small>Brasil, 2025</small> </p>
             </div>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
-        $(document).ready(function () {
-            const queryParams = new URLSearchParams(window.location.search);
-            const assunto = queryParams.get('assunto');
-            if (assunto) {
-                $('#assunto').val(assunto);
-            }
+        $(function () {
+            // Preenche assunto via query string
+            const params = new URLSearchParams(window.location.search);
+            const assunto = params.get('assunto');
+            if (assunto) $('#assunto').val(assunto);
 
-            $('#contact-form').on('submit', function (event) {
-                event.preventDefault();
+            $('#contact-form').on('submit', function (e) {
+                e.preventDefault();
+                const form = this;
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
 
-                $('#modal-spinner').show();
-                $('#modal-message').text('Enviando mensagem...');
-                $('#modal-cancel-button').show();
-                $('#modal-back-button').addClass('d-none');
-                $('#status-modal').modal('show');
-
-                const formData = $(this).serialize();
+                // Mostrar envio
+                $(form).hide();
+                $('.spinner-section').show();
 
                 $.ajax({
-                    url: $(this).attr('action'),
-                    method: $(this).attr('method'),
-                    data: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    },
+                    url: $(form).attr('action'),
+                    method: $(form).attr('method'),
+                    data: $(form).serialize(),
+                    dataType: 'json',
+                    headers: { 'Accept': 'application/json' },
                     success: function () {
-                        $('#modal-spinner').hide();
-                        $('#modal-message').text('Mensagem recebida! Responderemos em breve.');
-                        $('#modal-cancel-button').hide();
-                        $('#modal-back-button').removeClass('d-none');
-                        $('#contact-form')[0].reset();
+                        showResponse(true);
                     },
                     error: function () {
-                        $('#modal-spinner').hide();
-                        $('#modal-message').text('Ops! Houve um problema ao enviar a mensagem.');
-                        $('#modal-cancel-button').hide();
+                        showResponse(false);
                     }
                 });
             });
 
-            $('#modal-back-button').on('click', function () {
-                window.location.href = '/';
-            });
+            function showResponse(success) {
+                $('.spinner-section').hide();
+                const msg = success
+                    ? 'Formulário enviado com sucesso!'
+                    : 'Ocorreu um erro ao enviar. Tente novamente!';
+                $('#response-message').text(msg);
+                if (success) {
+                    $('#response-button')
+                        .text('Voltar à página inicial')
+                        .off('click')
+                        .on('click', () => window.location.href = 'index.html');
+                } else {
+                    $('#response-button')
+                        .text('Preencher novamente')
+                        .off('click')
+                        .on('click', () => window.location.reload());
+                }
+                $('.response-section').show();
+            }
         });
     </script>
 </body>
