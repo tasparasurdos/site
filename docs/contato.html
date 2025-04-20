@@ -117,61 +117,62 @@
                     ao início</a>
                 <div class="col-12">
                     <!-- header -->
-                    <h1 class="featured-font display-3 fw-bold text-body-emphasis lh-1 m-0">Título da Pagina</h1>
+                    <h1 class="featured-font display-3 fw-bold text-body-emphasis lh-1 m-0">Contato</h1>
                 </div>
                 <div class="col-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius libero dolor, at
-                        sodales justo maximus quis. Ut lacus urna, convallis vel erat nec, luctus faucibus erat. Mauris
-                        fermentum tincidunt nulla vel ullamcorper. Nam fermentum magna ut consectetur condimentum.
-                        Vivamus congue congue nibh, ac dignissim nisl dictum in. Etiam lectus sem, hendrerit sed justo
-                        a, elementum tincidunt erat. Vestibulum placerat egestas urna vel varius. Sed vitae eros
-                        suscipit quam molestie luctus sed a elit. Ut non maximus mi. In hac habitasse platea dictumst.
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
-
-                    <p>Duis in neque vulputate, sollicitudin odio et, vulputate sem. Mauris pulvinar lectus massa, sed
-                        consectetur felis commodo at. Pellentesque habitant morbi tristique senectus et netus et
-                        malesuada fames ac turpis egestas. Vivamus at lacus imperdiet, accumsan erat non, faucibus
-                        augue. Proin posuere quam id sapien rhoncus posuere. Curabitur nisl sem, pellentesque eget nisi
-                        nec, luctus dapibus erat. Donec et libero id neque molestie pharetra sit amet sed arcu. Integer
-                        porttitor arcu nisi, tristique sagittis nulla aliquet vel. Sed at diam vel tellus convallis
-                        blandit. In cursus leo non tristique finibus. Aenean scelerisque mauris in auctor laoreet.
-                        Vivamus id auctor risus. Ut sit amet fermentum dui. Phasellus tincidunt volutpat est non
-                        iaculis.</p>
-
-                    <p>Donec aliquam vel tellus vel mollis. Quisque ultrices arcu non efficitur lacinia. Ut sollicitudin
-                        elit eget dolor vehicula, id molestie elit blandit. Cras quis felis urna. Nunc aliquet, odio at
-                        accumsan bibendum, nisl neque feugiat massa, at varius mauris ex ut velit. Mauris sit amet
-                        gravida augue. Nulla facilisi. In eros velit, porttitor vitae aliquam non, laoreet vel augue.
-                        Suspendisse non mauris quis sapien imperdiet consequat porttitor vitae mi.</p>
-                    </p>
-
+                    <p>Sua opinião é importante para nos ajudar a melhorar ainda mais este site. Compartilhe conosco suas sugestões, críticas ou elogios. Ficaremos muito felizes em receber o seu contato, e prometemos responder em breve!</p>
+                </div>
+                <div class="col-12">
+                    <form id="contact-form" action="https://formspree.io/f/mldjqylr" method="POST">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Seu Nome:</label>
+                            <input type="text" id="nome" name="nome" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Seu E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto:</label>
+                            <input type="text" id="assunto" name="assunto" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" id="submit-button" class="btn btn-primary">Enviar mensagem</button>
+                            <button type="reset" class="btn btn-secondary">Limpar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
 
         </article>
 
-        <!-- COLABORE -->
-        <section class="container my-5 py-5">
-            <div class="row p-4 align-items-center rounded-3 bg-info-subtle">
-                <div class="col-md-3 p-0 overflow-hidden">
-                    <img class="img-fluid d-block mx-auto" src="assets/imagens/colaborate.png"
-                        alt="Indique uma tecnologia" style="max-height: 200px;" loading="lazy">
-                </div>
-                <div class="col-md-9">
-                    <h2 class="featured-font h2 fw-bold lh-1 text-body-emphasis">Indique uma Tecnologia!</h2>
-                    <p class="lead">Conhece alguma tecnologia assistiva que promova acessibilidade linguística para
-                        surdos que
-                        não
-                        está listada aqui? Compartilhe conosco e nos ajude a manter este catálogo completo e atualizado!
-                    </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                        <a role="button" href="contato.html"
-                            class="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold">Indique</a>
+        <!-- Modal -->
+        <div class="modal fade" id="status-modal" tabindex="-1" aria-labelledby="status-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="status-modal-label">Status</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modal-spinner" class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Enviando mensagem...</span>
+                        </div>
+                        <p id="modal-message" class="mt-3"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="modal-cancel-button" class="btn btn-danger"
+                            data-bs-dismiss="modal">Cancelar</button>
+                        <button id="modal-back-button" class="btn btn-secondary d-none">Voltar para página
+                            inicial</button>
                     </div>
                 </div>
-
             </div>
-        </section>
+        </div>
 
     </main>
 
@@ -244,6 +245,53 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const queryParams = new URLSearchParams(window.location.search);
+            const assunto = queryParams.get('assunto');
+            if (assunto) {
+                $('#assunto').val(assunto);
+            }
+
+            $('#contact-form').on('submit', function (event) {
+                event.preventDefault();
+
+                $('#modal-spinner').show();
+                $('#modal-message').text('Enviando mensagem...');
+                $('#modal-cancel-button').show();
+                $('#modal-back-button').addClass('d-none');
+                $('#status-modal').modal('show');
+
+                const formData = $(this).serialize();
+
+                $.ajax({
+                    url: $(this).attr('action'),
+                    method: $(this).attr('method'),
+                    data: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    success: function () {
+                        $('#modal-spinner').hide();
+                        $('#modal-message').text('Mensagem recebida! Responderemos em breve.');
+                        $('#modal-cancel-button').hide();
+                        $('#modal-back-button').removeClass('d-none');
+                        $('#contact-form')[0].reset();
+                    },
+                    error: function () {
+                        $('#modal-spinner').hide();
+                        $('#modal-message').text('Ops! Houve um problema ao enviar a mensagem.');
+                        $('#modal-cancel-button').hide();
+                    }
+                });
+            });
+
+            $('#modal-back-button').on('click', function () {
+                window.location.href = '/';
+            });
+        });
+    </script>
 </body>
 
 </html>
