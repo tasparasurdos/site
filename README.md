@@ -1,5 +1,8 @@
 # Gerador de Site Estático de Tecnologias Assistivas
 
+> [!WARNING]
+> Este projeto agora é parte de https://github.com/tasparasurdos/tasparasurdos.github.io.
+
 Este projeto gera um site estático completo a partir de dados de duas planilhas do Google Sheets (Tecnologias e Recursos). Usando Python, Jinja2, Bootstrap5 e jQuery, ele exporta páginas HTML prontas para serem hospedadas em serviços como GitHub Pages.
 
 Você pode customizar o site final alterando so arquivos do diretório `templates`. A obtenção/tratamento do conteúdo e criação das páginas `.html` é feito a partir do script `main.py`.
@@ -81,6 +84,5 @@ A lógica está em `assets/scripts.js` usando jQuery e data-attributes.
 2. Certifique-se de que o base path (`/`) esteja correto para `assets/` e `imagens/`.
 
 ---
-## Sobre
-
-Este projeto foi elaborado como resultado de mestrado em computação da UFMS.
+> [!WARNING]
+> Este projeto agora é parte de https://github.com/tasparasurdos/tasparasurdos.github.io.
